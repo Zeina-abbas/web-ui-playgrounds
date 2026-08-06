@@ -1,0 +1,119 @@
+.homeContainer {
+    .heroContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 157px;
+
+        .heroContent {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            left: 0;
+            gap: 36px;
+
+            h1 {
+                max-width: 595px;
+                font-family: Poppins;
+                font-weight: 800;
+                font-size: 108px;
+                line-height: 102px;
+                color: #000000;
+                margin: 0;
+            }
+
+            p {
+                max-width: 404px;
+                font-family: Poppins;
+                font-weight: 600;
+                color: #5A5959;
+                margin: 0;
+            }
+
+            .btns {
+                display: flex;
+                gap: 40px;
+
+                .shopBtn {
+                    padding: 6px 16px;
+                    font-size: 24px;
+                    font-weight: 600;
+                    border: none;
+                    background-color: #D01C28;
+                    color: #FFFFFF;
+                }
+
+                .categoryBtn {
+                    padding: 6px 16px;
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: #5A5959;
+                    border: #000000 1px solid;
+                    background-color: #ffff;
+                }
+            }
+        }
+
+        .shoesImg {
+            max-width: 530px;
+            padding-top: 62px
+        }
+    }
+}
+
+
+
+@media (max-width:1440px) {
+    .homeContainer {
+        .heroContainer {
+            padding: 40px 80px;
+
+            .heroContent {
+                gap: 24px;
+
+                h1 {
+                    font-weight: 800;
+                    font-size: 70px;
+                    line-height: 70px;
+
+                }
+
+            }
+
+            .shoesImg {
+                max-width: 430px;
+                padding-top: 32px
+            }
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .homeContainer {
+        .heroContainer {
+            flex-direction: column-reverse;
+            align-items: center;
+            /* padding: 40px 80px; */
+
+            .heroContent {
+                align-items: center;
+
+                h1 {
+                    text-align: center;
+
+                }
+
+                p {
+                    text-align: center;
+                }
+
+                .btns {}
+            }
+
+            .shoesImg {
+                max-width: 430px;
+                padding-top: 12px
+            }
+        }
+    }
+}

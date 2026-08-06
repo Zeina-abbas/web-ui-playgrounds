@@ -1,0 +1,9 @@
+.loginLinkControl{
+    display: none !important;
+}
+
+@media (max-width:768px) {
+    .loginLinkControl{
+        display: block !important;
+    }
+}

@@ -1,0 +1,65 @@
+.za-form-container {
+    font-family: Poppins;
+    display: grid;
+    margin-top: 23px;
+    gap: 20px;
+
+
+    .za-input-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        input {
+            height: 40px;
+        }
+
+        input {
+            padding: 0 8px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+        }
+
+        label {
+            position: absolute;
+            top: -13px;
+            left: 13px;
+            background-color: #fff;
+            font-size: 14px;
+            padding: 0 8px;
+        }
+    }
+    .allSearchContainer{
+        .forSpaceStyle{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            font-size: 17px;
+            margin-top: 20px;
+            
+        }
+    }
+    .forDiffStyle {
+        display: flex;
+        justify-content: center;
+        font-size: 17px;
+
+    }
+
+    .products-table {
+        width: 100%;
+        margin-top: 20px;
+
+        th,
+        td {
+            text-align: left;
+        }
+
+        th {
+            text-transform: uppercase;
+        }
+        .fixingThePosition{
+            padding-left: 50px;
+        }
+    }
+}

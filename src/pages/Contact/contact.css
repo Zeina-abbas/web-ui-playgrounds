@@ -1,0 +1,127 @@
+.contact-container {
+    padding: 80px 80px 0 150px;
+
+    h1 {
+        font-family: Poppins;
+        font-weight: 800;
+        color: #000000;
+        font-size: 80px;
+    }
+
+    .description {
+        max-width: 975px;
+        font-family: Poppins;
+        font-weight: 600;
+        color: #5A5959;
+    }
+
+    .hero-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .firstSide-container {
+            max-width: 472px;
+
+            .contact {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                column-gap: 32px;
+                row-gap: 17px;
+                font-family: Poppins;
+                font-weight: 600;
+
+                .contact-d-content {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                    padding: 10px 18px;
+                    border: 1px solid #000000;
+                    border-radius: 5px;
+                    grid-column: 1 / -1;
+                }
+            }
+
+            .inputForm {
+                font-family: Poppins;
+                display: grid;
+                margin-top: 23px;
+                gap: 20px;
+
+                .inputElement {
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+
+                    input{
+                        height: 40px;
+                    }
+                    textarea,
+                    input {
+                        padding: 0 8px;
+                        border: 1px solid #000000;
+                        border-radius: 5px;
+                    }
+
+                    label {
+                        /* width: 60px; */
+                        position: absolute;
+                        top: -13px;
+                        left: 13px;
+                        background-color: #fff;
+                        font-size: 14px;
+                        padding: 0 8px;
+                    }
+                }
+
+                .forDisplay {
+                    display: flex;
+                    justify-self: end;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1440px) {
+    .contact-container {
+        padding: 50px 50px 0 110px;
+
+        h1 {
+            font-size: 60px;
+        }
+    }
+}
+
+@media (max-width:1180px) {
+
+    .contact-container {
+        padding: 40px 40px 0 100px;
+
+        h1 {
+            text-align: center;
+        }
+
+        .description {
+            max-width: 975px;
+            text-align: center;
+        }
+
+        .hero-content {
+            flex-direction: column-reverse;
+            gap: 50px;
+
+            .firstSide-container {
+                .contact {
+
+                    .contact-d-content {}
+                }
+
+                .inputForm {}
+            }
+        }
+    }
+}
